@@ -9,7 +9,7 @@
     <meta name="keywords" content="Coffeeshop, Practicum, Reservation, Menu">
     <title>Document</title>
     <link rel="shortcut icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="../pages/index.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 <body>
  <div class="page">
     <header class="header">
-        <nav class="nav">
+      <nav class="nav">
             <img
               src="../images/logo_coffee_shop.svg"
               alt="Practicum Coffee Shop Logo"
@@ -53,14 +53,13 @@
                 <p class="header__paragraph">Hours:</p>
                 <p class="header__paragraph">Monday-Friday (10:00-19:00)</p>
                 <p class="header__paragraph">Saturday-Sunday (11:00-18:00)</p>
-              </div>
+            </div>
             <div class="header__address">
                <p class="header__paragraph">
                   200 Success Avenue, The Town of Practicum
               </p>
             </div>
         </div>
-      </div>
     </header>
     <main class="content">
         <section class="menu" id="menu">
@@ -121,116 +120,105 @@
          </div>
        </section>
        <section class="reservation">
-
             <h2 class="reservation__title" id="book-a-table">Book a table</h2>
-
-        <div class="reservation__form">
-            <fieldset class="form__fieldset" >
-                <label for="Name" class="form__label">Name *</label>
-                <input
-                  type="text"
+          <div class="reservation__form">
+              <fieldset class="form__fieldset" >
+                  <label for="name" class="form__label">Name *</label>
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="name"
+                    name="name"
+                    placeholder="Name Surname"
+                    required
+                  />
+                  <label for="number-of-guests" class="form__label">Number of Guests *</label>
+                  <input
+                  type="number"
+                  max="8"
+                  min="1"
                   class="form__input"
-                  id="name"
-                  name="name"
-                  placeholder="Name Surname"
+                  id="number-of-guests"
+                  name="number of guests"
+                  placeholder="1-8"
                   required
-                />
-                <label for="number of guests" class="form__label">Number of Guests *</label>
-                <input
-                type="number"
-                max="8"
-                min="1"
-                class="form__input"
-                id="number of guests"
-                name="number of guests"
-                placeholder="1-8"
+                  />
+                  <label for="date-time" class="form__label">Date & time *</label>
+                  <input
+                  type="datetime-local"
+                  class="form__input"
+                  id="date-time"
+                  name="Date & time"
+                  placeholder="mm/dd/yyyy --:-- --"
+                  required
+                  />
+                  <label for="your-email" class="form__label">Your email *</label>
+                  <input
+                  type="email"
+                  class="form__input"
+                  id="your-email"
+                  name="your email"
+                  placeholder="email@email.com"
+                  required
+                  />
+              </fieldset>
+              <fieldset class="form__fieldset-button">
+                <button type="button" class="form__button">Book a table</button>
+              </fieldset>
+              <fieldset class="form__fieldset-checkbox">
+                <label class="form__label-checkbox" for="i-agree">I agree with the terms of use</label>
+                <input type="checkbox"
+                class="form__checkbox"
+                name="i agree"
+                id="i-agree"
                 required
                 />
-                <label for="Date & time" class="form__label">Date & time *</label>
-                <input
-                type="datetime-local"
-                class="form__input"
-                id="Date & time"
-                name="Date & time"
-                placeholder="mm/dd/yyyy --:-- --"
-                required
-                />
-                <label for="Your email" class="form__label">Your email *</label>
-                <input
-                type="email"
-                class="form__input"
-                id="your email"
-                name="your email"
-                placeholder="email@email.com"
-                required
-                />
-          </fieldset>
-          <fieldset class="form__fieldset-button">
-            <button type="button" class="form__button">Book a table</button>
-          </fieldset>
-          <fieldset class="form__fieldset-checkbox">
-            <input type="checkbox"
-              class="form__checkbox"
-              name="i-agree"
-              id="i-agree"
-              required
-              />
-             <label class="form__label-checkbox" for="i-agree">I agree with the terms of use</label>
-           </fieldset>
-        </div>
-       </section>
-    <section class="about" id="about-us">
-        <h2 class="about__title" >About the coffee shop</h2>
-       <div class="about__content">
-            <p class="about__paragraph">Our coffee shop is located in the Practicum Library's hall. It features
-                6 tables and free WiFi.</p>
-            <p class="about__paragraph">Our main mission is keeping guests cozy and energized.</p>
-            <p class="about__paragraph">Besides that, we try to reduce our environmental impact — so we
-                don't sell single-use cups. But you can buy one of our reusable cups!</p>
-        </div>
-        <div class="about__circle"></div>
-        <div class="about__circle_animation_blurred"></div>
-        </div>
+            </fieldset>
+          </div>
         </section>
-
-
-    </body>
-  </main>
-
-<footer class="footer">
-  <div class="footer__content"
-     class="footer__logo">
-        <img class="footer__logo"
-        src="./images/practicum_logo.svg"
-        alt="practicum word"/>
-        <div class="footer__social-column">
-    <h2 class="footer__social-heading">Social Media</h2>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a class="footer__social-link" href="#">
-                  <img
-                    class="footer__social-icon"
-                    src="./images/facebook_white.svg"
-                    alt="Facebook Logo"
-                  />Facebook
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__social-link" href="#">
-                  <img
-                    class="footer__social-icon"
-                    src="./images/instagram_white.svg"
-                    alt="Instagram Logo"
-                  />Instagram
-                </a>
-              </li>
-            </ul>
+        <section class="about" id="about-us">
+            <h2 class="about__title" >About the coffee shop</h2>
+            <div class="about__content">
+                <p class="about__paragraph">Our coffee shop is located in the Practicum Library's hall. It features 6 tables and free WiFi.</p>
+                <p class="about__paragraph">Our main mission is keeping guests cozy and energized.</p>
+                <p class="about__paragraph">Besides that, we try to reduce our environmental impact — so we don't sell single-use cups. But you can buy one of our reusable cups!</p>
+              <div class="about__circle"></div>
+              <div class="about__circle_animation_blurred"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+            <img class="footer__logo"
+                src="./images/practicum_logo.svg"
+                alt="practicum word"/>
+            <div class="footer__social-content">
+                <h4 class="footer__social-heading">Social Media</h4>
+                  <ul class="footer__list">
+                      <li class="footer__list-item">
+                        <a class="footer__social-link" href="#">
+                          <img
+                            class="footer__social-icon"
+                            src="./images/facebook_white.svg"
+                            alt="Facebook Logo"
+                          />Facebook
+                        </a>
+                      </li>
+                      <li class="footer__list-item">
+                        <a class="footer__social-link" href="#">
+                          <img
+                            class="footer__social-icon"
+                            src="./images/instagram_white.svg"
+                            alt="Instagram Logo"
+                          />Instagram
+                        </a>
+                      </li>
+                  </ul>
+              </div>
         </div>
-    </div>
-            <p class="footer__copyright">&copy; 2023 Michaela Budde</p>
-    </div>
-</footer>
- </div>
+        <p class="footer__copyright">&copy; 2023 Michaela Budde</p>
+    </footer>
+  </div>
 
 </body>
 </html>
