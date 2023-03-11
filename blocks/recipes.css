@@ -4,7 +4,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+
+
 }
 
 .recipes__title{
@@ -34,16 +35,19 @@
 
 .recipes__videos{
     display:flex;
-    justify-content: center;
+    margin: auto;
+    justify-content: space-between;
     padding-bottom: 215px;
-
+    max-width: 1000px;
 }
 
 .recipes__iframe{
- padding-left: 40px;
  font-weight: 500;
     font-size: 20px;
     line-height: 30px;
+    width: 480px;
+    height: 273px;
+    border-style: none;
 }
 
 .recipes__video-caption{

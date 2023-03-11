@@ -71,15 +71,11 @@
   width: 385px;
   padding: 0px;
   border-width: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
 }
-
-.form__label_type_button{
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-
-  }
 
   .form__button:hover{
     opacity: 70%;

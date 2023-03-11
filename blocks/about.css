@@ -23,9 +23,9 @@
 }
 
 .about__title{
-    
+
     font-family: Inter;
-    
+
     font-style: normal;
     font-weight: 500;
     font-size: 44px;
@@ -35,7 +35,7 @@
     padding-left: 80px;
     margin: 0;
 
-    
+
 
 }
 
@@ -49,7 +49,7 @@
     padding-top: 119px;
     padding-bottom: 173px;
     width: 660px;
-    
+
 
 
 }
@@ -63,8 +63,8 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-    
-    
+
+
 
 }
 
@@ -88,6 +88,6 @@
     height: 426px;
     border-radius: 50%;
     z-index: -1;
-    animation: pulsate 1.3s ease-in-out infinite; 
-    
+    animation: pulsate 1.3s ease-in-out infinite;
+
 }
