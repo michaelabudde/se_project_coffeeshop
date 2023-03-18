@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 385px;
-  padding-bottom: 120px;
+  width: 100%;
+  max-width: 385px;
 }
 
 .form__fieldset {
@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-  min-width: 385px;
+  /*min-width: 385px;*/
   margin: auto;
   padding-bottom: 32px;
   padding-top: 32px ;

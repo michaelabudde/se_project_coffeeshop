@@ -32,7 +32,12 @@
   .footer__social-heading{
     margin-top: 0;
     padding: 0;
-    margin-bottom:20px
+    margin-bottom: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .footer__list {
