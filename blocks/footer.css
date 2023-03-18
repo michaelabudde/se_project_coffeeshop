@@ -2,7 +2,8 @@
     box-sizing: border-box;
     background: linear-gradient(180deg, #0A2850 0%, #071931 100%);
     color: #ffffff;
-    padding: 60px 102px 60px 80px;
+    padding: 60px 100px 60px 80px;
+    margin: 0;
     line-height: 20px;
     min-height: 224px;
   }
@@ -24,7 +25,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
-    font-family: Inter;
+    font-family: "Inter", "Arial", sans-serif;
     font-style: normal;
   }
 
@@ -76,5 +77,5 @@
     justify-content: flex-start;
     margin: 108px 0 0;
     color: #ffffff;
-    font-family: Inter;
+    font-family: "Inter", "Arial", sans-serif;
   }

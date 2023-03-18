@@ -11,7 +11,6 @@
     }
 }
 
-
 .about{
     background-color:#0A2850;
     color: #ffffff;
@@ -20,23 +19,22 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-bottom: 173px;
+    padding-right: 80px;
+    margin: 0;
 }
 
 .about__title{
-
-    font-family: Inter;
-
+position: relative;
+    font-family: "Inter", "Arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 44px;
     line-height: 52px;
-    width: 251px;
-    padding-top: 100px;
-    padding-left: 80px;
+    max-width: 251px;
     margin: 0;
-
-
-
 }
 
 .about__content{
@@ -44,28 +42,20 @@
     justify-content: flex-end;
     margin-left: auto;
     gap: 20px;
-    padding-right: 80px;
     flex-direction: column;
-    padding-top: 119px;
-    padding-bottom: 173px;
-    width: 660px;
-
-
-
+    margin-top: 19px;
+    max-width: 660px;
 }
 
 .about__paragraph{
     display: flex;
     justify-content: flex-start;
     margin: 0;
-    font-family: Noto Serif;
+    font-family: "Noto Serif","Times New Roman", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-
-
-
 }
 
 .about__circle{
@@ -80,14 +70,5 @@
 }
 
 .about__circle_animation_blurred{
-    position: absolute;
-    top: -152px;
-    left: -129px;
-    background-color: #2f80ed;
-    width: 426px;
-    height: 426px;
-    border-radius: 50%;
-    z-index: -1;
     animation: pulsate 1.3s ease-in-out infinite;
-
 }
