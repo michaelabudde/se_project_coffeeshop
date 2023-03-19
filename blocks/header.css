@@ -15,6 +15,7 @@
     flex-direction: column;
     position: relative;
     box-sizing: border-box;
+    z-index: 1;
 }
 
   .header__title {
@@ -27,6 +28,7 @@
     font-style: normal;
     text-align: left;
     margin-bottom: 0px;
+    margin-top: 80px;
   }
 
   .header__span-accent{
@@ -35,7 +37,6 @@
     font-style: italic;
     font-size: 60px;
     line-height: 72px;
-    margin-top: 80px;
     margin-bottom: 0px;
     color: #2f80ed;
   }
@@ -48,31 +49,24 @@
     font-family: "Noto Serif","Times New Roman", serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
     line-height: 30px;
 
   }
 
   .header__image {
-    z-index: 1;
     position: absolute;
     max-width: 646px;
     max-height: 568px;
     top: 124px;
     right: 5px;
+    z-index: -1;
   }
 
 
   .header__footer {
-    position: absolute;
-    left: 0;
-    bottom: 40px;
-    width: 100%;
-    display: flex;
+    margin-top: auto;
     align-items: flex-end;
-    padding: 40px 80px 0;
     justify-content: space-between;
-    box-sizing: border-box;
     font-weight: 400;
   }
 

@@ -15,10 +15,8 @@
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-  /*min-width: 385px;*/
-  margin: auto;
-  padding-bottom: 32px;
-  padding-top: 32px ;
+  max-width: 385px;
+  margin: 32px 0px 0px 0px;
   border-style: none;
 }
 
@@ -31,8 +29,18 @@
   font-family: "Inter", "Arial", sans-serif;
   font-size: 20px;
   color: #838383;
-  width: 385px;
+  width: 100%;
   box-sizing: border-box;
+  padding: 10px;
+}
+
+.form__input::placeholder{
+  font-family: "Inter", "Arial", san-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
 }
 
 .form__input [type="text"]
@@ -52,14 +60,20 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    padding-bottom: 8px;
-    gap: 12px;
+    margin-bottom: 8px;
+
     flex-direction: row;
     justify-content: left;
     text-align:left;
     align-items: flex-start;
     width: 385px;
 
+}
+.form__label_type_checkbox{
+  justify-content: center;
+  flex-direction: row;
+  padding: 0;
+  gap: 12px;
 }
 
 .form__button{
@@ -69,7 +83,8 @@
   color: #ffffff;
   border-radius: 4px;
   height: 60px;
-  width: 385px;
+  width: 100%;
+  box-sizing: border-box;
   padding: 0px;
   border-width: 0px;
   font-family: "Inter", "Arial", sans-serif;
@@ -86,24 +101,7 @@
   .form__checkbox{
     height: 20px;
     width:20px;
+    border-radius: 4px;
   }
 
-.form__label_type_checkbox{
-  display: flex;
-  justify-content: center;
-  border-radius: 2px;
-  flex-direction: row;
-  height: 20px;
-  padding: 0;
-  border-style: none;
-}
 
-
-.form__input::placeholder{
-  font-family: "Inter", "Arial", san-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  color: #838383;
-}
