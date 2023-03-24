@@ -54,6 +54,7 @@
     line-height: 30px;
     position: relative;
     z-index: 2;
+    margin-bottom: 0px;
   }
 
   .header__image {
